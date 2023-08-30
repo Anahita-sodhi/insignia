@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insignia - Intercollege Event</title>
+    <link rel="shortcut icon" href="assets/images/insignialogo2.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+         a {
+            margin-inline: 13px;
+            color: black;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+       
+
+        .navbar-brand img {
+            max-height: 106px;
+        }
+
+        .container {
+            max-width: 100%;
+            max-height: 90px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .event-description {
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            max-width: 80%;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.7); /* Added background color */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-slider {
+            width: 100%;
+            height: auto; /* Adjusted height to make it responsive */
+            max-height: 80vh; /* Added max-height for responsiveness */
+            overflow: hidden;
+        }
+
+        .slider-content {
+            display: flex;
+            animation: slide 20s infinite;
+        }
+
+        .slider-content img {
+            width: 100vw;
+            height: 80vh;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(-100%); }
+            40% { transform: translateX(-200%); }
+            60% { transform: translateX(-300%); }
+            80% { transform: translateX(-400%); }
+            100% { transform: translateX(-500%); }
+        }
+        @media (max-width: 576px) {
+            .event-description {
+                font-size: 16px;
+                width: 570px;
+                font-size: 20px;
+                top:55%;
+            }}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TechFest Insights</a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand mx-auto" href="#">
+                        <img src="assets/images/insignialogo2.png" alt="Insignia Logo">
+                    </a>
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Registrations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Past Glory: Insignia 2022</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="event-description">
+        <p>
+            Experience the Best of College Life with INSIGNIA’ 2023<br><br>
+            INSIGNIA is the ultimate intercollege event for showcasing your skills and having fun. Our range of technical and cultural events, along with expert photography and cinematography services, guarantee an unforgettable experience.
+        </p>
+    </div>
+
+    <div class="image-slider">
+        <div class="slider-content">
+            <img src="assets/images/avishkar.jpg" alt="img-1">
+            <img src="assets/images/g.dance.jpg" alt="img-2">
+            <img src="assets/images/comedy.jpg" alt="img-3">
+            <img src="assets/images/electro-hunt.jpg" alt="img-4">
+            <img src="assets/images/code.jpg" alt="img-5">
+            <img src="assets/images/website.jpg" alt="img-6">
+            <img src="assets/images/computer-competiton.jpg" alt="img-7">
+            <img src="assets/images/fashion.jpg" alt="img-8">
+            <img src="assets/images/reels.jpg" alt="img-10">
+            <img src="assets/images/cinematography.jpg" alt="img-12">
+            <img src="assets/images/photography.jpg" alt="img-13">
+            <img src="assets/images/mobile-gaming.jpg" alt="img-9">
+            <img src="assets/images/dance.jpg" alt="img-14">
+            <img src="assets/images/ingniapic.jpg" alt="img-15">
+           
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
