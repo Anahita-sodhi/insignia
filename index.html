@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
          a {
-            margin-inline: 13px;
+            margin-inline: 14px;
             color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
         }
 
         body {
@@ -18,9 +20,16 @@
             padding: 0;
             background-color: #f5f5f5;
             text-align: center;
+            overflow-x: hidden;
         }
-
-       
+      header{
+        font-family: 'Times New Roman', Times, serif;
+        
+      }
+        header p{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     justify-content: center;
+        }
 
         .navbar-brand img {
             max-height: 106px;
@@ -28,7 +37,7 @@
 
         .container {
             max-width: 100%;
-            max-height: 90px;
+            max-height: auto;
             margin: 0 auto;
             padding: 10px;
         }
@@ -39,22 +48,22 @@
             max-width: 80%;
             margin: 0 auto;
             position: absolute;
-            top: 50%;
+            top: 70%;
             left: 50%;
             font-family: 'Times New Roman', Times, serif;
             font-size: 24px;
             transform: translate(-50%, -50%);
             z-index: 1;
             padding: 15px;
-            background-color: rgba(0, 0, 0, 0.7); /* Added background color */
+            background-color: rgba(0, 0, 0, 0.7); 
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
 
         .image-slider {
             width: 100%;
-            height: auto; /* Adjusted height to make it responsive */
-            max-height: 80vh; /* Added max-height for responsiveness */
+            height: auto; 
+            max-height: 80vh; 
             overflow: hidden;
         }
 
@@ -68,6 +77,9 @@
             height: 80vh;
             object-fit: cover;
         }
+       
+ 
+
 
         @keyframes slide {
             0% { transform: translateX(0); }
@@ -77,13 +89,76 @@
             80% { transform: translateX(-400%); }
             100% { transform: translateX(-500%); }
         }
-        @media (max-width: 576px) {
+        @media (min-width: 300px) and (max-width: 795px) {
+        
             .event-description {
-                font-size: 16px;
-                width: 570px;
-                font-size: 20px;
-                top:55%;
-            }}
+                top: 90%; 
+                width: 90%; 
+                font-size: 18px;
+            }
+
+         
+            .container {
+                width: 90%; 
+               
+            }
+         #left {
+           margin-left: -35%;
+        }
+    
+        #right {
+           margin-right:-35%;
+        }
+        }
+        @media  (min-width: 800px) and (max-width: 1280px){
+
+            #left {
+           margin-left: -20%;
+        }
+    
+        #right {
+           margin-right:-20%;
+        }
+        }
+        
+        .event-card {
+            flex-basis: calc(33.33% - 20px);
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .event-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .card:hover {
+            transition: transform 0.2s ease;
+            transform: scale(0.9);
+            
+        }
+   
+    .trophy-img {
+            max-width: 50px;
+        }
+    
+       
+        .trophy-decoration {
+            position: absolute;
+            top: 2%;
+            
+        }
+    
+        .left {
+            left: 30%;
+        }
+    
+        .right {
+            right: 30%;
+        }
+
+
     </style>
 </head>
 <body>
@@ -93,7 +168,7 @@
                 <div class="navbar-collapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#">Our Team</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Events</a>
@@ -110,6 +185,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Registrations</a>
                         </li>
+                       
                         <li class="nav-item">
                             <a class="nav-link" href="#">Past Glory: Insignia 2022</a>
                         </li>
@@ -146,7 +222,87 @@
 
         </div>
     </div>
+<br>
+    <header >
+        <h1>Exciting Events !</h1>
+        <div class="container mt-4">
+            <p>All students are invited to join us for an exciting voyage filled with learning and adventure! We guarantee that the events on our calendar will pique your interests. We have it everything, including intellectually demanding Technical Events that will test your knowledge and ingenuity, culturally enlivening Cultural Events that highlight diversity and artistry, and fun activities meant to let free and have a good time. It's a special chance to meet like-minded people, broaden your horizons, and create priceless memories. Join us for a once-in-a-lifetime adventure that will not only rekindle your enthusiasm but also leave you with a wealth of unforgettable memories.</p>
+        </div>
+    </header>
 
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/technical-event.jpg" class="card-img-top" alt="Technical Events">
+                    <div class="card-body">
+                        <h2 class="card-title">Technical Events</h2>
+                        <p class="card-text">Prepare yourself for a series of thrilling technological challenges that will put your knowledge to the test. Experience an unforgettable event with us!</p>
+                        <a href="#technical-events" class="btn btn-primary">Click here to know more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 ">
+                <div class="card">
+                    <img src="assets/images/cultural-event.jpg" class="card-img-top" alt="Cultural Events">
+                    <div class="card-body">
+                        <h2 class="card-title">Cultural Events</h2>
+                        <p class="card-text">Experience the magic of art, music, and talent in our Cultural Events. It's a celebration of creativity, where traditions meet modernity.</p>
+                        <a href="#cultural-events" class="btn btn-primary">Click here to know more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/fun-activity.jpg" class="card-img-top" alt="Fun Activities">
+                    <div class="card-body">
+                        <h2 class="card-title">Fun Activities</h2>
+                        <p class="card-text">Join the adventure in our Fun Activities, from treasure hunts to box cricket. It's all about having a blast and making memories!</p>
+                        <a href="#fun-activities" class="btn btn-primary">Click here to know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4" id="talent">
+        <header class="text-center mb-4 position-relative">
+           
+            <div class="trophy-decoration left" id="left">
+                <img src="assets/images/trophy.gif" alt="Trophy" class="img-fluid trophy-img">
+            </div>
+    
+            <h1 class="mt-0">Unleash Your Talent!</h1>
+            <h5>Do you have a hidden talent waiting to be discovered?</h5>
+    
+           
+            <div class="trophy-decoration right" id="right">
+                <img src="assets/images/trophy.gif" alt="Trophy" class="img-fluid trophy-img">
+            </div>
+        </header>
+    
+        <div class="row">
+           
+            <div class="col-md-8 offset-md-2 text-center">
+                <div class="talent">
+                    <ul class="text-left">
+                        <li>Join us at Insignia 2023 and let your skills shine! Whether you're an aspiring artist, a tech genius, or a passionate performer, we have the perfect platform for you to showcase your talents. Our events are designed to bring out the best in you and provide a stage where you can leave a mark.</li>
+                        <li>Don't miss this opportunity to unleash your creativity, connect with like-minded individuals, and be part of an unforgettable experience. Join us at Insignia and make your mark in the world of talent and innovation!</li>
+                    </ul>
+                    <a href="#registration-section" class="btn btn-primary mt-3">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
